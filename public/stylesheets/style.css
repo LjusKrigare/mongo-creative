@@ -1,0 +1,58 @@
+h1
+{
+ font: courier;
+ margin-left: 200px;
+ text-size: 400%;
+ text-decoration: underline;
+}
+
+body
+{
+ background-color: lightgrey;
+ background-repeat:no-repeat;
+}
+
+input[type=text]
+{
+ width: 150px;
+ display: block;
+ margin-bottom: 10px;
+ margin-left: 20px;
+}
+
+input[type=submit]
+{
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+div
+{
+font: courier;
+margin-left: 250px;
+}
+
+ul
+{
+color: black;
+font: courier;
+font-size: 125%;
+background-color: yellow;
+}
+
+p
+{
+ font: courier;
+ margin-left: 200px;
+ font-size: 150%;
+}
+
+.button
+{
+ width: 150px;
+ display: block;
+ margin-bottom: 10px;
+ margin-left: 20px;
+}

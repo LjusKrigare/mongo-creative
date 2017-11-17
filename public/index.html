@@ -1,0 +1,31 @@
+<html>
+<head>
+ <title>Birthday List</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="javascripts/app.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+  </head>
+<body>
+ <div id="app" ng-app="app" ng-controller="MainCtrl">
+<h1>Add a Birthday to the List </h1>
+<form id="addBirthday" ng-submit="addPerson()">
+Name: <input type="text" ng-model="Name"/>
+Birthday: <input type="text" ng-model="Day"/>
+Age: <input type="text" ng-model="Age"/>
+<input type="submit" value="Submit"/>
+</form>
+<h1>Birthday List</h1>
+<ul id=bday-list">
+<li ng-repeat='b in birthday'>
+Name: {{b.Name}}<br>
+Birthday: {{b.Birthday}}<br>
+Age: {{b.Age}}<br>
+</li>
+</ul>
+<button type="button" ng-click="clear()">Clear List</button>
+</div>
+</body>
+</html>
+
